@@ -34,8 +34,19 @@
     }
 
     .left {
+      position: relative;
       background: #ccc;
       flex: 0 1 50%;
+    }
+    .center {
+      position: absolute;
+      right : -175px;
+      top : 200px;
+      width: 350px;
+      height: 150px;
+      background: #999;
+
+      min-height: 200px;
     }
     .right {
       background: #aaa;
@@ -64,7 +75,10 @@
     <p>search</p>
   </header>
   <main>
-    <div class="left">leftPic</div>
+    <div class="left">
+      leftPic
+      <div class="center">Center</div>
+    </div>
     <div class="right">rightPic</div>
   </main>
   
