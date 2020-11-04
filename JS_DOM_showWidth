@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>TEST20 flex wrap</title>
+    
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                
+            }
+            
+            .container{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+            }
+            
+            .box{
+                background-color: deeppink;
+                flex: 1 1 100px;
+/*
+                width:150;
+                height: 100;
+*/
+                margin: 5px;
+            }
+        
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="box">BOX</div>
+            <div class="box">BOX</div>
+            <div class="box">BOX</div>
+            <div class="box">BOX</div>
+            <div class="box">BOX</div>
+        </div>
+    
+        <script>
+            
+            window.onresize = function() {
+                
+            let dw = document.querySelector('.box').style.clientWidth;
+            let box = document.querySelectorAll('.box');
+                
+            box.forEach( n => n.innerHTML = n.clientWidth)
+//                
+//            ตัว Nodelist ใช้ได้แต่ forEach
+//            ถ้าจะใช้ map, filter, reduce ทำได้โดยใช้ call
+//            
+//            Array.prototype.map.call(dd,
+//                n => n.innerHTML = n.clientWidth
+//            )
+          
+                
+            }
+        </script>
+    </body>
+
+</html>

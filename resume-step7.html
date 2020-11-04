@@ -1,0 +1,230 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>My Resume</title>
+        <style>
+            html {
+                background-color: dimgrey
+            }
+            body {
+                width: 960px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color:whitesmoke;
+                font-family: Verdana, sans-serif;
+                color: darkslategrey;
+                padding: 10px;
+                padding-left: 20px;
+                border-radius: 3px;
+            }
+            .container {
+                margin-left : 30;
+                margin-right: 10;
+            }
+            
+            img{
+                width: 370;
+                margin-left: 35px;
+                border-radius: 10px;
+                box-shadow: 2px 3px 4px silver;
+            }
+            .title{
+                display: inline-block;
+                margin-left : 50;
+                vertical-align: top;
+            }
+
+                        
+            h1 {
+                width: 300;
+                color: burlywood;
+                font-family: monospace;
+                font-size: 130px;
+                font-weight: 100;
+                margin-bottom: 35;
+                margin-top: 0px;
+                line-height: 0.9;
+            }
+            
+            h2 {
+                width: 100%;
+                color: burlywood;
+                background-color: rgba(218, 243, 253, 0.81);
+                margin-bottom: 15px;
+                margin-right: 50px;
+                padding-left: 10px;
+                font-weight: 100;
+                border-radius: 25px;
+            }
+
+            .contact{
+                font-size: 0.9em;
+                font-weight: 100;
+                color: cadetblue;
+                border-top: 1px dotted grey;
+                border-bottom: 1px dotted grey;
+                padding: 10 0 ;
+                text-align: right;
+                margin-left: 10;
+                line-height: 1.6;
+            }
+            .tcontact {
+                border-collapse: collapse;
+                background: rgba(240, 244, 213, 0.43);
+                width: 400;
+                color: cadetblue;
+                font-size: 1.2em;
+                letter-spacing: 1.4;
+                padding: 20, 0;
+                margin: 35 0 0;
+/*                border-top: 1px dotted grey;*/
+/*                border-bottom: 1px dotted grey;  */
+                box-shadow: 2px 3px 4px 1px silver;
+                border-radius: 10px;
+                
+            }
+
+            .tcontact td {
+                padding: 2px
+            }
+            .tcontact tr td:first-child {
+                padding-left: 10px;
+                
+            }
+            
+            .tcontact tr td:last-child {
+                text-align: left;
+                padding-left: 20px;
+            }
+            
+            .tcontact tr:first-child td{
+                padding-top: 10;
+            }
+            .tcontact tr:last-child td {
+                padding-bottom: 10;
+            }
+            
+            .profile{
+                display: inline-block;
+                width: 45%;
+/*                margin-top: 20px;*/
+                margin-left: 5px;
+                height: 300px;
+                border: 1px 
+            }
+            .experience{
+                display: inline-block;
+                width: 45%;
+/*                margin-top: 20px;*/
+                margin-left: 40;
+                height: 300px;
+                vertical-align: top;
+            }
+            
+            h4 {
+                margin: 0 0 0 10;
+                color:grey;
+            }
+            
+            .ptext{
+                letter-spacing: 1.5;
+                line-height: 1.4;
+/*                width: 95%;*/
+                margin: 5 auto;
+                text-align: justify;
+                text-indent: 25px;
+                padding-left: 10;
+                padding-right: 10;
+            }
+            
+            ul.ptext li {
+                display: inline-block;
+            }
+            
+            ul.ptext {
+                margin-left: 30px;
+                opacity: 0.75;
+            }
+            
+            h6 {
+                text-align: right;
+                font-weight: 100;
+                margin-top: 2px;
+                margin-bottom: 0
+            }
+            
+            nav{
+                text-align: right;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Story</a>
+            <a href="#">Portfolio</a>
+        </nav>
+        <img src="profile-pic.jpg">
+        <div class="title">
+            <h1>Harry Potter</h1>
+<!--
+            <p class="contact"> 
+                <i class="fa fa-envelope-o" aria-hidden="true"></i> : harry@hwschools.wz <br> 
+                <i class="fa fa-phone" aria-hidden="true"></i> : 555-5555<br>
+                <span style="color:white; background-color: forestgreen">Line id</span> : harry_p <br> 
+            </p>
+-->
+        <table class="tcontact">
+            <tbody><tr> 
+                <td><i class="fa fa-envelope-o" aria-hidden="true"></i></td> 
+                <td>harry@hawkward.wz</td> 
+            </tr>
+            <tr> 
+                 <td><i class="fa fa-phone" aria-hidden="true"></i></td>
+                 <td>555-5555</td> 
+            </tr>
+            <tr> 
+                <td><span style="color:white; background-color: forestgreen">Line id</span></td>
+                <td>harry.p</td> 
+            </tr>
+        </tbody></table>
+        </div>
+        <h2>Skills</h2>
+        <ul class="ptext">
+            <li><i class="fa fa-html5 fa-2x" aria-hidden="true" style="color:red"> HTML</i></li>
+            <li><i class="fa fa-css3 fa-2x" aria-hidden="true" style="color:limegreen">CSS</i></li>
+            <li style="font-size: 35px; color:darkblue"> <i class="fa fa-keyboard-o" aria-hidden="true"></i> Javascript</li>
+        </ul>
+        <div class="profile">
+            <h2>Profile</h2>
+            <p class="ptext">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+            </p>
+        </div>
+        
+        <div class="experience">
+            <h2>Experience</h2>
+            <h4>ABC Corp.</h4>
+            <p class="ptext">
+                A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. 
+            </p>
+            <h4>XYZ Corp.</h4>
+            <p class="ptext">
+               I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, 
+            </p>
+        </div>    
+        
+        <h2>Education</h2>
+        <p class="ptext"><u>Bachelor's degree</u>, Computer Science, ABC University</p>
+        <p class="ptext"><u>Master degree</u>, Computer Science, ABC University</p>
+        <br>
+        <hr>
+        <h6><em>Credit : My own skill</em></h6>
+        </div>
+    
+
+</body>
+</html>

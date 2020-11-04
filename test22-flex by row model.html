@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>TEST22</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            html {
+                font-family: "verdana", sans-serif;
+                font-size: 18px;
+                background-color: black;
+            }
+            
+            body {
+                background-image: linear-gradient(white, grey);
+                color:darkblue;
+                max-width: 1024px;
+                margin: 10 auto;
+                border-radius: 10px;
+            }
+            
+            #br{
+                flex-basis: 100%;
+                height: 0;
+            }
+            
+            .row {
+                display: flex;
+                flex-wrap:wrap;
+                flex-basis: 100%;
+                flex-direction: column;
+            }
+            
+            @media only screen and (min-width: 650px) {
+                .row{
+                    flex-direction: row;
+                }
+            }
+            
+            .header {
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .header h1{
+                font-size: 3rem;
+                margin-left: 15px;
+                font-weight: 100;
+                letter-spacing: 3;
+            }
+            
+            .header img{
+                border-radius: 10px;
+                opacity: 80%;
+            }
+            
+            .middle{
+/*                background-color:rgba(184, 134, 11, 0.24);*/
+                justify-content: space-around;
+                margin: 10 0;
+                letter-spacing: 1.2;
+                flex-wrap: wrap;
+                margin: 30 0;
+
+            }
+            
+            .middle > div {
+                border-radius: 10px;  
+                padding: 10px;
+                margin: 10;
+            }
+            
+            .middle-l{
+                flex: 1;
+/*                flex-basis: 30%;*/
+                background-color: antiquewhite;
+            }
+            
+            .middle-c{
+                flex: 2;
+
+/*                flex-basis: 30%;*/
+                background-color: whitesmoke;
+            }
+            .middle-r{
+                flex: 1;
+
+/*                flex-basis: 30%;*/
+                background-color: antiquewhite;
+            }
+            
+            .bottom {
+                background-color: azure;
+                justify-content: center;
+                padding: 20;
+                margin: 30 10;
+                border-radius: 10px;
+            }
+            
+            h1{
+                
+            }
+        
+        </style>
+    </head>
+
+    <body>
+        <div class="row header">
+            <img src="https://unsplash.it/150/150">
+            <h1>Codecamp Thailand</h1>
+            <img src="https://unsplash.it/150/150">
+        </div>
+        <div class="row middle">
+            <div class="middle-l">
+                <h2>Headline</h2>
+                <p>Here’s the challenge: if you want to create a flexbox layout with several rows of items, how do you control which item ends up in which row? Presume you want to create a layout that looks something like this, with three stacked items and alternating full-width items:</p>
+            </div>
+            <div class="middle-c">
+                <h2>Headline</h2>
+                <p>Here’s the challenge: if you want to create a flexbox layout with several rows of items, how do you control which item ends up in which row? Presume you want to create a layout that looks something like this, with three stacked items and alternating full-width items:</p>
+
+            </div>
+            <div class="middle-r">
+            
+                <h2>Headline</h2>
+                <p>Here’s the challenge: if you want to create a flexbox layout with several rows of items, how do you control which item ends up in which row? Presume you want to create a layout that looks something like this, with three stacked items and alternating full-width items:</p>
+
+            </div>
+        </div>
+        <div class="row middle">
+            <div class="middle-c" style="flex: 2; margin: 10">
+                <h2>Headline</h2>
+                <p>Here’s the challenge: if you want to create a flexbox layout with several rows of items, how do you control which item ends up in which row? Presume you want to create a layout that looks something like this, with three stacked items and alternating full-width items:</p>
+            </div>
+            <div class="middle-c" style="flex: 1; margin:10">
+                <h2>Headline</h2>
+                <p>Here’s the challenge: if you want to create a flexbox layout with several rows of items, how do you control which item ends up in which row? Presume you want to create a layout that looks something like this, with three stacked items and alternating full-width items:</p>
+            </div>
+        </div>
+        
+        <div class="row bottom">
+                Money for nothing
+        
+        </div>
+        
+        
+        
+
+
+    
+    </body>
+
+</html>

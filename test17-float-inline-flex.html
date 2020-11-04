@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>Test17</title>
+        <style>
+            body {
+                width: 90%;
+                color:
+            }
+            .container {
+                outline: 1px dashed red;
+                overflow: auto;
+                height:180px;
+            }
+        
+            .left {
+                float:left;
+                width:200
+            }
+            .right {
+                float: left;
+                width:200;
+                overflow: hidden;
+            }
+            h2{
+                vertical-align: middle;
+            }
+            .ibox{
+                outline:1px dashed red;
+                overflow: auto;
+                height: 180
+            }
+            
+            .ileft {
+                display: inline-block;
+                width:200;
+            }
+            
+            .iright {
+                display: inline-block;
+                width:200;
+                vertical-align: top;
+            }
+            
+            .fbox {
+                display: flex;
+                height: 180;
+                outline: 1px dotted blue;
+                overflow: auto;
+                justify-content: space-around;
+/*                align-content: flex-end;*/
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .fbox div {
+                width: 200;
+
+            }
+            
+            #p1{
+                   
+            }
+            
+            #p2 {
+               align-self: flex-end;
+            }
+            
+            #p3{
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <h1>Codecamp Thailand</h1>
+        <div class="container">
+        <div class="left">
+            <h3>Profile</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, </p>
+        </div>
+        
+        <div class="right">
+            <h3>Experience</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, </p>
+        </div>
+            
+        <div class="right">
+            <h3>Experience</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, </p>
+        </div>
+            <h2>Hey</h2>
+        </div>
+        
+        
+        <div class="ibox">
+            <div class="ileft">
+                <h3>Profile</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, </p>
+            </div>
+            <div class="iright">
+                <h3>Experience</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, </p>
+            </div>
+            <div class="iright" style="overflow: hidden;">
+                <h3>Experience</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, parturient montes, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,parturient montes, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
+            </div>
+            <h2 style="display:inline-block; vertical-align:top;">HAHA</h2>
+            
+        </div>
+        
+        <div class="fbox">
+            <div class="fleft">
+                <h3>Profile</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, </p>
+            </div>
+            <div class="fright">
+                <h3>Experience</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, </p>
+            </div>
+            <div class="fright">
+                <h3>Experience</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, parturient montes, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,parturient montes, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
+            </div>
+        </div>
+        
+        <div>
+        Compare between "FLOAT" vs. "INLINE BLOCK" vs. "FLEX"<br>
+            RESULT : FLEX win...555
+        </div>
+        <br>
+        <div class="fbox">
+            <p id="p1">Hello,</p>
+            <p id="p2">Codecamp</p>
+            <p id="p3">Thailand</p>
+        </div>
+        
+    
+    </body>
+    
+</html>

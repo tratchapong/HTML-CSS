@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+    :root{
+        --maincolor : #333;
+        --divheight : 200px;
+        --divwidth : 200px;
+    }
+    
+    * {
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        font-family: "verdana", sans-serif;
+    }
+    body{
+        color: var(--maincolor);
+    }
+    
+    .div1, .div2 {
+      display: flex;
+      float: left;
+      width: var(--divwidth);
+      height: var(--divheight);
+      margin: 10px;
+      border: 1px solid black;
+    }
+    
+    .div-img {
+        display: flex;
+        flex-flow: column;
+        width: 90%;
+        height: 90%;
+        background: #999;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        color:aliceblue;
+    }
+    
+    .pic {
+        background-image: url(profile-pic.jpg);
+        background-size: cover;
+        flex: 1 1;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+</style>
+    
+<script>
+var counter = 0;
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+  console.log(ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+    let hh2 = document.getElementById(data).children[0];
+    console.log(hh2.innerHTML);
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<h2>Drag and Drop</h2>
+<p>Drag the image back and forth between the two div elements.</p>
+
+<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="div-img" draggable="true" ondragstart="drag(event)" id="drag1">
+        <h2>OMG!!!</h2>
+        <div class="pic">
+            <h3>haha</h3>
+        </div>
+    </div>
+</div>
+
+<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+</body>
+</html>

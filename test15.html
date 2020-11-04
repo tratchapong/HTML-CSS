@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Test15</title>
+        
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                outline: 1px dashed red;
+            }
+            
+            body {
+                width: 80%;
+                margin: 10 auto;
+            }
+            
+            .container {
+                display: flex;
+                width:800;
+                height:600;
+                margin:auto;
+                color:white;
+                background-color: antiquewhite;
+                align-items: flex-end;
+                justify-content: center
+            }
+            
+            .d1 {
+/*                margin-left: 100;*/
+                width:300;
+                height:200;
+                color:white;
+                background: #990000;
+            }
+            
+            .d2 {
+                width:300;
+                height:200;
+                color:white;
+                background: #000099;
+            }
+            #box2{
+                align-items: baseline;
+                flex-direction: row-reverse;
+            }
+        
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="d1">
+                Box D1
+            </div>    
+            <div class="d2">
+                Box D1
+            </div>    
+        </div>
+        <div class="container" id="box2">
+            <div class="d1"></div>
+            <div class="d2"></div>
+        </div>
+    </body>
+
+</html>

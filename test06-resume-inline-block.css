@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    width : 90%;
+    max-width: 900px;
+    box-shadow: 2px 3px 4px 2px #CCCCCC;
+    margin: 20 auto;
+    border-radius: 8px;
+    color:rgba(26, 85, 190, 0.87);
+    letter-spacing: 0.2em;
+}
+
+.title {
+    width : 100%;
+    height : 200px;
+    margin-bottom: 40px;
+}
+
+.title-left {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+
+img {
+    height: 100%;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.title-left h1{
+    display: inline-block;
+    letter-spacing: 0.5em;
+    width: 5em;
+    font-size: 2.4em;
+    margin-left: 10px;
+    vertical-align: bottom;
+    margin-bottom: 100px;
+
+}
+
+.title-right{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.navbar {
+    height: 50%;
+    vertical-align: bottom;   
+}
+
+.navbar p{
+    text-align: right;
+}
+
+.navbar ul{
+    text-align: right;
+    list-style-type: none;
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 0 10;
+    border: 1px dotted green;
+    box-shadow: 2 2 3;
+}
+.navbar a{
+    text-decoration: none;
+}
+
+.contact {
+    position: relative;
+    bottom: 20;
+    right:20;
+    height: 50%;
+    color: rgba(4, 2, 20, 0.6);
+}
+
+.contact p {
+    position:relative;
+    top:3.5em;
+    left:9em;
+    text-align: right;
+    width: 300px;
+    padding: 2;
+}
+.contact p:first-child {
+    border-top : 1px solid red;
+}
+.contact p:last-child {
+    border-bottom : 1px solid red;
+}
+
+
+.content {
+    padding: 30 30 15;
+    margin-left:30;
+    text-align: justify;
+    width:75%
+}
+.content hr{
+    width: 150px;
+    border-top: 5px solid rgb(219, 18, 18);
+    border-radius: 4px;
+    margin : 5 0 10 15;
+}
+.content p{
+    color : rgba(4, 2, 20, 0.9);
+    text-indent: 2em;
+}
+
+    div {
+/*                border: 1px dashed red;*/
+    }

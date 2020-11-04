@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin : 0;
+      padding : 0;
+      box-sizing: border-box;
+    }
+    header {
+      background : #eee;
+      min-height : 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header nav {
+      flex: 0 1 60vw;
+      background: #bbb;
+    }
+    header ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+    }
+    main {
+      background: #ddd;
+      min-height: 800px;
+      display: flex;
+
+    }
+
+    .left {
+      background: #ccc;
+      flex: 0 1 50%;
+    }
+    .right {
+      background: #aaa;
+      flex: 0 1 50%;
+      outline: 1px dashed blue;
+    }
+
+    
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <p>Logo</p>
+    <nav>
+      <ul>
+        <li>Menu1</li>
+        <li>Menu2</li>
+        <li>Menu3</li>
+        <li>Menu4</li>
+        <li>Menu5</li>
+        <li>Menu6</li>
+        <li>Menu7</li>
+      </ul>
+    </nav>
+    <p>search</p>
+  </header>
+  <main>
+    <div class="left">leftPic</div>
+    <div class="right">rightPic</div>
+  </main>
+  
+</body>
+</html>

@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Smooth Scroll Page</title>
+        <link rel=stylesheet href="index.css">
+        <link rel=stylesheet href="home.css">
+        <script>
+            function includeHTML() {
+              var z, i, elmnt, file, xhttp;
+              /* Loop through a collection of all HTML elements: */
+              z = document.getElementsByTagName("*");
+              for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                  /* Make an HTTP request using the attribute value as the file name: */
+                  xhttp = new XMLHttpRequest();
+                  xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                      if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                      if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                      /* Remove the attribute, and call this function once more: */
+                      elmnt.removeAttribute("w3-include-html");
+                      includeHTML();
+                    }
+                  }
+                  xhttp.open("GET", file, true);
+                  xhttp.send();
+                  /* Exit the function: */
+                  return;
+                }
+              }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+        
+        <div id="home" class="page">
+            <div class="container" "page">
+                <img src="img/profile-pic.jpg">
+                <h1>Hello,</h1>
+                <p>I am Harry, web developer from Bkk.Thailand. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean commodo ligula eget dolor. </p>
+
+                    <a href="#">Portfolio</a>
+                    <a href="#">Contact me</a>
+            </div>
+        </div>
+        
+        <div id="profile" class="page" w3-include-html="content.html">
+            <h1>This is Profile page..</h1>
+        </div>
+
+        <div id="experience" class="page">
+            <h1>This is Experience page..</h1>
+        </div>
+        
+        <div id="education" class="page">
+            <h1>This is Education page..</h1>
+        </div>
+        
+        <div id="skills" class="page">
+            <h1>This is Skills page..</h1>
+        </div>
+        
+    </body>
+
+<script>
+includeHTML();
+</script>
+</html>

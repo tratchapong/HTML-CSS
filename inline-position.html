@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin:0;
+                padding:0;
+            }
+            div{
+                outline: 1px dashed red;
+            }
+            
+            .container {
+                width: 90%;
+                max-width: 960px;
+                margin: 10 auto;
+                height: 100%;
+            }
+            
+            .row {
+                display: block;
+                position: relative;
+                width: 99%;
+                height: 100px;
+                margin: 5 auto;
+            }
+            
+            #p1 {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            #p2 {
+                position: absolute;
+                right: 0;
+            }
+            #p3 {
+                position: absolute;
+                bottom: 0;
+            }
+            #p4 {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+            #p5 {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+            .r2div {
+                display: inline-block;
+                outline: 1px dotted green;
+                width: 30%;
+                height: 100%;
+                text-align: center;
+                vertical-align: top;
+                margin-left: 2%;
+            }
+        
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <p id="p1">Hello, Codecamp 1 </p>
+                <p id="p2">Hello, Codecamp 2 </p>
+                <p id="p3">Hello, Codecamp 3 </p>
+                <p id="p4">Hello, Codecamp 4 </p>
+                <p id="p5">Hello, Codecamp 5 </p>
+            </div>
+            <div class="row">
+                <div class="r2div">
+                    <h3>Good morning</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                </div>
+                <div class="r2div">
+                    <h3>Good Afternoon</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                </div>
+                <div class="r2div">
+                    <h3>Good Evening</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                </div>
+            </div>
+            <div class="row" style="height:750;">
+                <div class="r2div" style="width:45%;  margin-left: 3.4%">
+                    <h3>Good morning</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                </div>
+                <div class="r2div" style="width:45%">
+                    <h3>Good morning</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                </div>
+            
+            </div>
+        
+        </div>
+    </body>
+</html>

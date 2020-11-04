@@ -1,0 +1,70 @@
+body{
+    margin : 0;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 200;
+    color: #3F71C0;
+    margin-left: 5%;
+    margin-top: 1em;
+    width:90%;
+}
+
+hr {
+    border: 3px solid #71C03F;
+    border-radius: 2px;
+    opacity: 50%;
+}
+
+.thinHR{
+    border: 1px solid #70C03F;
+
+}
+img {
+    width: 150px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+h1{
+    color: #3F71C0;
+    font-size: 3em;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+
+}
+
+h2{
+    font-weight: 200;
+    width: 150px;
+}
+
+#surname {
+    margin-left: 12px;
+}
+
+h5{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 120px;
+    vertical-align: top;
+    text-align: right;
+    color: #71C03F;
+    font-weight: 100;
+    font-size: 0.9em;
+    padding-left: 5px;
+}
+
+p {
+    color:#C03F71;
+    text-align: justify;
+    margin: 0,30;    
+}
+
+#dummy{
+    color: #3F71C0;
+    color: #71C03F;
+    color: #C03F71;   
+}

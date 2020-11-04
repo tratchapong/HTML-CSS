@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>TEST DOM</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                display: flex;
+                
+            }
+            div {
+                outline: 1px dashed green;
+                margin: auto;
+            }
+        
+        </style>
+    </head>
+    
+    <body>
+        <div>
+            <p>?</p>
+        </div>
+        
+        <script>
+            let div = document.querySelector('div');
+            let p = document.querySelector('p');
+            
+            window.onresize = function() {
+                let w = window.innerWidth;
+                let h = window.innerHeight;
+                div.style.width = w - 50;
+                div.style.height = h - 50;
+            
+            p.innerHTML = `Window size = ${w} : ${h}<br>`
+            p.innerHTML += `Div size = ${w-50} : ${h-50}`
+            }
+            
+        </script>
+    </body>
+
+</html>

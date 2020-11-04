@@ -1,0 +1,88 @@
+
+<html>
+    <head>
+        <title>This is Test HTML-CSS Flex template</title>
+        <style>
+            :root {
+                --color1 : #fffc3a;
+                --color2 : #a0ff3a;
+                --color3 : #ff993a;
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;                
+            }
+            
+            body {
+                font-family: monospace;
+                font-size: 18px;
+            }
+            
+            section{
+                display: flex;
+                min-height: 200px;
+                margin-bottom: 5px;
+            }
+            
+            .sec1 {
+                background-color: var(--color1);
+            }
+            
+            .sec2 {
+                background-color: var(--color2);
+            }
+            
+            .col{
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .row {
+                flex-flow: row;
+                justify-content: space-around;
+            }
+            
+            .row *{
+                margin: 0 5px;
+                padding: 5px;
+                outline: 1px dashed red;
+                
+            }
+            
+            .box:nth-child(1) {
+                flex: 0 0 200px;
+                margin: 10px;
+                outline: 1px dashed blue;
+            }
+            .box:nth-child(2) {
+                flex: 4 1 20%;
+                margin: 10px;
+                outline: 1px dashed blue;
+            }
+            
+        </style>
+    
+    </head>
+    
+    <body>
+        <section class="sec1 col">
+            <h1>Title</h1>
+            <p>Description</p>
+        </section>
+        <section class="sec2 row">
+            <h1>Title</h1>
+            <p>Description</p>
+            <h1>Title</h1>
+            <p>Description</p>        
+        </section>
+        <section class="sec1 row">
+            <div class="box"></div>
+            <div class="box"></div>
+        
+        </section>
+        
+    </body>
+</html>

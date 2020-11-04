@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Smooth Scroll Page</title>
+        
+        <style>
+            html {
+                scroll-behavior: smooth;
+                font-family: sans-serif;
+                font-weight: 600;
+                color: rgb(221, 49, 168);    
+            }
+            
+            body {
+                margin: 0 auto;
+                padding: 0;
+                width: 80%;
+                max-width: 960px;
+            }
+            
+            nav {
+                margin: 0 auto;
+                width: 80%;
+                max-width: 960px;
+                background: silver;
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+            }
+            
+            nav ul {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                justify-content: flex-end;
+            }
+            
+            nav li {
+/*                padding: 10 0;*/
+            }
+            
+            nav li a{
+                display: block;
+                padding: 10px;
+                width: 100px;
+                border: 1px dotted grey;
+                font-weight: 100;
+                text-align: center;
+                text-decoration: none;
+                color: darkblue;
+                text-transform: uppercase;
+            }
+            
+            nav li a:hover {
+                color: whitesmoke;
+                background-color: darkblue;
+            }
+            
+            .page {
+                height: 100vh;
+                padding: 30 0vh;
+                display:flex;
+                background-color: cadetblue;
+                color: ghostwhite;
+            }
+            
+            #home {
+                background-color: rgba(9, 0, 59, 0.97);
+            }
+        
+        </style>
+    </head>
+    
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+        
+        <div id="home" class="page">
+            <h1>This is my Home page</h1>
+        </div>
+        
+        <div id="profile" class="page">
+            <h1>This is Profile page..</h1>
+        </div>
+
+        <div id="experience" class="page">
+            <h1>This is Experience page..</h1>
+        </div>
+        
+        <div id="education" class="page">
+            <h1>This is Education page..</h1>
+        </div>
+        
+        <div id="skills" class="page">
+            <h1>This is Skills page..</h1>
+        </div>
+        
+    </body>
+
+
+</html>

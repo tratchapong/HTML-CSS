@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
+
+        <title>TEST Dummy</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                
+            }
+            
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .container{
+                flex-basis: 100%;
+                display: flex;
+                margin:10;
+                padding:10;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .box:before {
+                content: "";
+                border:
+            }
+            
+            .box {
+                min-height: 100px ;
+                flex-basis: 300px;
+                background-color: aquamarine;
+                color: deeppink;
+                margin:10;
+            }
+            
+            output {
+                position: relative;
+                font-size: 5rem;
+                color: deepskyblue;
+                background-color: beige;
+                border-radius: 10px;
+                padding: 5px;
+            }
+        </style>
+    
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="box">
+                <form oninput="res.value=parseInt(vol.value)*10">
+                    <input type="range" id="vol" name="vol" value="5">
+                    <output name="res"></output>
+                </form>
+            </div>
+            <div class="box" style="border: 1px dashed red; border-width: 1 2 3 4">1</div>
+            <div class="box"><i class='fab fa-js-square' style='font-size:48px;color:red'></i></div>
+            <div class="box">1</div>
+            <div class="box">1</div>
+            <div class="box">1</div>
+        </div>
+    
+    </body>
+</html>

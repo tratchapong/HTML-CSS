@@ -1,0 +1,204 @@
+<html>
+    <head>
+        <title>Test14</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html{
+                background-color: silver;
+            }
+            
+            body{
+                max-width: 1200;
+                margin: auto;
+                font-family: "lato","verdana", sans-serif;
+                font-weight: 700;
+                color: rgb(4,4,74);
+            }
+            
+            header {
+                display: flex;
+                background-color: whitesmoke;
+                justify-content: space-between;
+                width:100%;
+                margin: 0 auto;
+
+            }
+            .logo {
+                font-size: 2.5em;        
+                letter-spacing: 2.5;
+            }
+            header nav {
+                margin-top: 15px;
+            }
+            
+            header nav a{
+                position: relative;
+                bottom: -10;
+                padding: 10 15 15 15;
+                text-decoration: none;
+                font-size: 1.1em;
+                font-weight: 400;
+            }
+            
+            header a:hover{
+                background-color: rgba(4,4,74,0.8);
+                color:whitesmoke;
+            }
+            
+            main {
+                position: relative;
+                height: 600;
+                background: #aaaaaa;
+                background-image: 
+                    linear-gradient(rgba(160, 160, 160, 0.74),rgba(18, 0, 0, 0.65)),
+                    url("img/pedro-lastra-unsplash.jpg");
+                background-size: cover;
+                background-position: bottom;
+            }
+            
+            .mainbox {
+                position: absolute;
+                width: 940px;
+/*                background: #990099;*/
+/*                outline: 1px dashed red;*/
+                height: 470;
+                bottom:0;
+                left: 50%;
+                transform: translate(-50%);
+            }
+            .left {
+                display: inline-block;
+                width: 470;
+                height: 100%;
+                background: rgba(0, 153, 0, 0.4);
+                background-image: url(img/profile-pic.jpg);
+                background-size: cover;
+                filter: grayscale(100%);
+/*                border-radius: 10px;*/
+                
+            }
+            .right {
+                display: inline-block;
+                width: 470px;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.83);
+/*                border-radius: 10px;*/
+                vertical-align: bottom;
+            }
+            .right div{
+                width: 70%;
+                height: 70%;
+                margin: 15% auto;
+/*                outline: 1px dashed red;*/
+                font-size: 1.7em
+            }
+            .right h4{
+                margin-top: 20;
+                font-size: 0.8em
+            }
+            
+            .right p{
+                font-size: 0.7em;
+                font-weight: 100;
+            }
+            
+            .social-bar{
+                width:940;
+                height: 75;
+                background: rgba(4, 4, 74, 0.83);
+                margin:auto;
+                text-align: center;
+                color: white;
+                font-size: 2em;
+            }
+            
+            .social-bar li{
+                margin: 20 20 0 20;
+                display: inline-block;
+            }
+            section{
+                height: 475;  
+                background: rgb(235, 235, 235)
+                
+            }
+            
+            .intro {
+                width:600;
+                margin: 100 auto 0 auto;
+                height:160;
+                text-align: center;
+/*                background: gold;*/
+/*                outline: 1px dashed red;*/
+                font-weight: 100;
+                font-size: 1.7em;
+            }
+            
+            .intro p{
+                font-size: 0.8em;
+                letter-spacing: 1;
+                
+            }
+            
+            
+        
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <div class="logo">Harry Potter</div>
+            <nav>
+                <a href>Experience</a>
+                <a href>Education</a>
+                <a href>Skill</a>
+                <a href>Lifestyle</a>
+            </nav>
+        </header>
+        <main>
+            <div class="mainbox">
+                <div class="left"></div><!--
+                --><div class="right">
+                    <div>
+                        <H1>Harry Potter</H1>
+                        <H3>Web Developer</H3>
+                        <h4>E-mail</h4>
+                        <p>harry.p@hogwarts.io</p>
+                        <h4>Phone</h4>
+                        <p>662-555-5555</p>
+                        <h4>Address</h4>
+                        <p>Hogwarts village, London St. 11111</p>
+                        
+                    </div>
+               </div><!--
+            --></div>
+        </main>
+        <section>
+        
+        <div class="social-bar">
+            <ul>
+                <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+                <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+            
+        <div class="intro">
+          <h2>Hello,  I'm Harry</h2>
+          <p>Introduction Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,</p>
+        </div>
+            
+        </section>
+        
+    
+    </body>
+
+</html>
